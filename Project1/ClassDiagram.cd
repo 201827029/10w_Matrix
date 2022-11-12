@@ -1,37 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="matrix3">
-    <Position X="0.5" Y="3" Width="2" />
+    <Position X="5.25" Y="1" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAACAAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAACAAAAAAAAAABAAAAAAQAAAABAAAAgAAAAAAA=</HashCode>
       <FileName>MuSoenMath.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="vector3">
-    <Position X="2.75" Y="1" Width="1.5" />
+    <Position X="8.75" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAgAAAAAAAAAAAAAAAAAACAAAAAAAAAAAgAAAAAAA=</HashCode>
       <FileName>MuSoenMath.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="matrix4">
-    <Position X="1" Y="4.75" Width="1.5" />
+    <Position X="5.5" Y="3.75" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAEAAAAAAAAAAACAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAEAAAAAAAAAAACAAAAAQAAAABAAAAgAAAAAAA=</HashCode>
       <FileName>MuSoenMath.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="vector3_2">
-    <Position X="2.75" Y="3" Width="1.5" />
+    <Position X="8.75" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAACEAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAiEAAAAAA=</HashCode>
       <FileName>MuSoenMath.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="vector4">
-    <Position X="2.75" Y="4.75" Width="1.5" />
+    <Position X="8.75" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAQAAAAAAEAAAAAAAAAAACAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <HashCode>AAAAQAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAwAAAAAAA=</HashCode>
+      <FileName>MuSoenMath.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="vector4_2">
+    <Position X="8.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAgIAAAAAA=</HashCode>
       <FileName>MuSoenMath.h</FileName>
     </TypeIdentifier>
   </Class>

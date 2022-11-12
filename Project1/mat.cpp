@@ -3,8 +3,8 @@
 void main() {
 
 	matrix3 Translate(3, 5, 1);
-	matrix3 Rotate(30, "rot");
-	matrix3 Scale(2, 2);
+	//matrix3 Rotate(30, "rot");
+	//matrix3 Scale(2, 2);
 
 	vector3_2 vv(3, 4, 5);
 	vector4 v4(2, 3, 4, 5);
@@ -50,30 +50,30 @@ void main() {
 	}
 	cout << endl;
 
-	cout << "Rotate ч溺" << endl;
+	//cout << "Rotate ч溺" << endl;
 
-	for (size_t i = 0; i < 3; i++)
-	{
-		for (size_t j = 0; j < 3; j++)
-		{
-			cout << Rotate.mat3[j][i] << " ";
-		}
-		cout << endl;
-	}
-	cout << endl;
+	//for (size_t i = 0; i < 3; i++)
+	//{
+	//	for (size_t j = 0; j < 3; j++)
+	//	{
+	//		cout << Rotate.mat3[j][i] << " ";
+	//	}
+	//	cout << endl;
+	//}
+	//cout << endl;
 
 
-	cout << "Scale ч溺" << endl;
+	//cout << "Scale ч溺" << endl;
 
-	for (size_t i = 0; i < 3; i++)
-	{
-		for (size_t j = 0; j < 3; j++)
-		{
-			cout << Scale.mat3[j][i] << " ";
-		}
-		cout << endl;
-	}
-	cout << endl;
+	//for (size_t i = 0; i < 3; i++)
+	//{
+	//	for (size_t j = 0; j < 3; j++)
+	//	{
+	//		cout << Scale.mat3[j][i] << " ";
+	//	}
+	//	cout << endl;
+	//}
+	//cout << endl;
 
 	cout << "Translate 瞪纂" << endl;
 	Translate.transposeMatrix3();
@@ -352,9 +352,21 @@ void main() {
 	}
 	cout << endl;
 
-	cout << "天天天天天天天44ч溺 鼻熱培天天天天天天天" << endl;
-	cout << "{1,1,1,1}" << endl << "{2,2,2,2}" << endl << "{3,3,3,3}" << endl << "{4,4,4,4}" << endl << endl << "*" << endl << "2" << endl << "=" << endl;
-	mat4.constantmat4(2);
+	cout << "天天天天天天天33ч溺 鼻熱釭敦撬天天天天天天天" << endl;
+	cout << "{2,2,2}" << endl << "{4,4,4}" << endl << "{6,6,6}" << endl << "*" << endl << "2" << endl << "=" << endl;
+	mat3.divisionmat3(2);
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 3; j++) {
+			cout << mat3.mat3[i][j];
+			if (j < 2) cout << " ";
+		}
+		cout << endl;
+	}
+	cout << endl;
+
+	cout << "天天天天天天天44ч溺 鼻熱釭敦撬天天天天天天天" << endl;
+	cout << "{2,2,2,2}" << endl << "{4,4,4,4}" << endl << "{6,6,6,6}" << endl << "{8,8,8,8}" << endl << endl << "*" << endl << "2" << endl << "=" << endl;
+	mat4.divisionmat4(2);
 	for (int i = 0; i < 4; i++) {
 		for (int j = 0; j < 4; j++) {
 			cout << mat4.mat4[i][j];
@@ -378,6 +390,27 @@ void main() {
 	cout << "{2,3,4,5}" << endl << endl << "*" << endl << "2" << endl << "=" << endl;
 	v4.vec4[0][0] = 2; v4.vec4[0][1] = 3; v4.vec4[0][2] = 4; v4.vec4[0][3] = 5;
 	v4.constantvec4(2);
+
+	cout << v4.vec4[0][0] << " ";
+	cout << v4.vec4[0][1] << " ";
+	cout << v4.vec4[0][2] << " ";
+	cout << v4.vec4[0][3];
+	cout << endl;
+
+	cout << "天天天天天天天13漱攪 鼻熱釭敦撬天天天天天天天" << endl;
+	cout << "{2,3,1}" << endl << endl << "*" << endl << "2" << endl << "=" << endl;
+	v.vec3[0][0] = 2; v.vec3[0][1] = 3; v.vec3[0][2] = 1;
+	v.divisionvec3(2);
+
+	cout << v.vec3[0][0] << " ";
+	cout << v.vec3[0][1] << " ";
+	cout << v.vec3[0][2];
+	cout << endl;
+
+	cout << "天天天天天天天14漱攪 鼻熱釭敦撬天天天天天天天" << endl;
+	cout << "{2,3,4,5}" << endl << endl << "*" << endl << "2" << endl << "=" << endl;
+	v4.vec4[0][0] = 2; v4.vec4[0][1] = 3; v4.vec4[0][2] = 4; v4.vec4[0][3] = 5;
+	v4.divisionvec4(2);
 
 	cout << v4.vec4[0][0] << " ";
 	cout << v4.vec4[0][1] << " ";

@@ -140,11 +140,7 @@ public:
 		{
 			for (int j = 0; j < 3; j++)
 			{
-				multiplemat3[j][i] = 0;
-				for (int k = 0; k < 3; k++)
-				{
-					multiplemat3[j][i] = this->mat3[j][k] - mat3.mat3[k][i];
-				}
+				multiplemat3[j][i] = this->mat3[j][i] - mat3.mat3[j][i];
 			}
 		}
 		return matrix3
@@ -153,11 +149,17 @@ public:
 			multiplemat3[2][0], multiplemat3[2][1], multiplemat3[2][2]);
 	}
 	
-	void constantmat3(int a)
+	void constantmat3(int a) //»ó¼ö°ö
 	{
 		mat3[0][0] *= a; mat3[0][1] *= a; mat3[0][2] *= a;
 		mat3[1][0] *= a; mat3[1][1] *= a; mat3[1][2] *= a;
 		mat3[2][0] *= a; mat3[2][1] *= a; mat3[2][2] *= a;
+	}
+	void divisionmat3(int a) //»ó¼ö³ª´°¼À
+	{
+		mat3[0][0] /= a; mat3[0][1] /= a; mat3[0][2] /= a;
+		mat3[1][0] /= a; mat3[1][1] /= a; mat3[1][2] /= a;
+		mat3[2][0] /= a; mat3[2][1] /= a; mat3[2][2] /= a;
 	}
 };
 
@@ -212,10 +214,14 @@ public:
 		return vector3(vec3[0][0], vec3[0][1], vec3[0][2]);
 	}
 
-
 	void constantvec3(int a) // »ó¼ö °ö
 	{
 		vec3[0][0] *= a; vec3[0][1] *= a; vec3[0][2] *= a;
+	}
+
+	void divisionvec3(int a) // »ó¼ö ³ª´°¼À
+	{
+		vec3[0][0] /= a; vec3[0][1]/= a; vec3[0][2] /= a;
 	}
 };
 
@@ -263,7 +269,10 @@ public:
 		mat4[2][3] = z;
 		mat4[3][3] = w;
 	}
-	matrix4(float a, float b, float c, float d, float e, float f, float g, float h, float i, float j, float k, float l, float m, float n, float o, float p) // xyz°ª
+	matrix4(float a, float b, float c, float d,
+			 	  float e, float f, float g, float h,
+				  float i,float j, float k, float l,
+				  float m, float n, float o, float p) // xyz°ª
 	{
 		mat4[0][0] = a; mat4[0][1] = b; mat4[0][2] = c; mat4[0][3] = d;
 		mat4[1][0] = e; mat4[1][1] = f; mat4[1][2] = g; mat4[1][3] = h;
@@ -358,11 +367,7 @@ public:
 		{
 			for (int j = 0; j < 4; j++)
 			{
-				multiplemat4[j][i] = 0;
-				for (int k = 0; k < 4; k++)
-				{
-					multiplemat4[j][i] = this->mat4[j][k] - mat4.mat4[k][i];
-				}
+				multiplemat4[j][i] = this->mat4[j][i] - mat4.mat4[j][i];
 			}
 		}
 		return matrix4
@@ -378,6 +383,13 @@ public:
 		mat4[1][0] *= a; mat4[1][1] *= a; mat4[1][2] *= a; mat4[1][3] *= a;
 		mat4[2][0] *= a; mat4[2][1] *= a; mat4[2][2] *= a; mat4[2][3] *= a;
 		mat4[3][0] *= a; mat4[3][1] *= a; mat4[3][2] *= a; mat4[3][3] *= a;
+	}
+	void divisionmat4(int a)
+	{
+		mat4[0][0] /= a; mat4[0][1] /= a; mat4[0][2] /= a; mat4[0][3] /= a;
+		mat4[1][0] /= a; mat4[1][1] /= a; mat4[1][2] /= a; mat4[1][3] /= a;
+		mat4[2][0] /= a; mat4[2][1] /= a; mat4[2][2] /= a; mat4[2][3] /= a;
+		mat4[3][0] /= a; mat4[3][1] /= a; mat4[3][2] /= a; mat4[3][3] /= a;
 	}
 };
 
@@ -516,6 +528,10 @@ public:
 	void constantvec4(int a)
 	{
 		vec4[0][0] *= a; vec4[0][1] *= a; vec4[0][2] *= a; vec4[0][3] *= a;
+	}
+	void divisionvec4(int a)
+	{
+		vec4[0][0] /= a; vec4[0][1] /= a; vec4[0][2] /= a; vec4[0][3] /= a;
 	}
 };
 
